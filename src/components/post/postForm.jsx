@@ -7,6 +7,7 @@ import {
     MenuItem,
     ListItemText,
 } from "@material-ui/core";
+import MyEditor from "./editor/myEditor";
 
 const categories = [
     {
@@ -55,6 +56,7 @@ const PostForm = () => {
                     error={error}
                     helperText="Title of the blog post is required"
                 />
+                <MyEditor />
                 <Select
                     multiple
                     displayEmpty
